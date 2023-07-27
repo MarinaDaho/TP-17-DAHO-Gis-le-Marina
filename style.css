@@ -3,39 +3,9 @@ body {
   padding: 0;
   font-family: "Rubik", sans-serif;
 }
-
-nav {
-  background-color: bisque;
+.card body{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
 }
-nav h2 {
-  color: black;
-  font-family: "Rubik", sans-serif;
-  font-size: 30px;
-}
-nav .onglets {
-  margin-top: 3px;
-  margin-left: 400px;
-  text-decoration: ;
-}
-nav .onglets a {
-  text-decoration: solid;
-  color: #000;
-  margin-right: 25px;
-  font-size: 20px;
-}
-nav button {
-  padding: 10px 20px;
-  background-color: orangered;
-  color: aliceblue;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
 .card {
   background-color: bisque;
   padding: 4%;
@@ -62,8 +32,11 @@ nav button {
   right: 20%;
   margin-bottom: 20%;
 }
+.G{
+  text-align: center;
+}
 .card .order2 .element1 {
-  position: absolute;
+  position: relative;
   z-index: 2;
   right: 1%;
   padding-top: 3%;
@@ -102,14 +75,24 @@ nav button {
   display: flex;
   justify-content: space-between;
 }
+@media all (max-width: 300px) {
+  .order5{
+    padding:1px;
+    justify-content: colum;
+    font-size: 5px;  
+  }
+}
 .heading-feactured-in {
   align-items: center;
   display: flex;
   justify-content: center;
+  font-size: -10px;
 }
 .order5 {
   display: flex;
   justify-content: space-between;
+  margin-right: 140px;
+  padding-right: 60px;
 }
 .order6 {
   color: orange;
@@ -121,10 +104,12 @@ nav button {
 .order8 {
   font-size: 60px;
   color: rgb(100, 94, 94);
+  padding-right: 0px;
 }
 .order9 {
   font-size: 30px;
   margin-top: 0%;
+  padding-right: ;
 }
 .order10 {
   display: flex;
@@ -132,10 +117,68 @@ nav button {
   padding: 0%;
   margin-left: 8%;
   margin-right: 5%;
+  padding-right: 100px;
 }
+@media (max-width:300px) {
+  .phone-phone{
+    flex-direction: column;
+  }
+  .Three{
+    flex-direction: column;
+  }
+  .tu{
+    flex-direction: column;
+  }
+  .car9{
+    width: 4px;
+    flex-direction: column;
+  }
+  .section{
+    flex-direction: column;
+  }
+  .mu{
+    flex-direction: column;
+  }
+  .a{
+    flex-direction: column;
+  }
+  .news1{
+    flex-direction: column;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .cola{
+    flex-direction: column;
+  }
+  .cover3{
+    font-size: 10px;
+  }
+  .cover4 > h1 > P{
+    font-size: 1em;
+  }
+  .footer{
+    flex-direction: column;
+  }
+}
+.vin{
+  width: 100%;
+  height: 900px;
+}
+.couleur{
+  color: rgb(247, 152, 36);
+}
+.full{
+  display: flex;
+}
+
 .section {
   padding-left: 10%;
   padding-right: 30%;
+}
+.phone1{
+  padding-left: ;
+  padding-right: 100%;
 }
 .section1 {
   font-size: 20px;
@@ -241,7 +284,7 @@ nav button {
   display: flex;
   justify-content: space-between;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 20%;
   background-color: rgb(240, 124, 82);
 }
 .cover4 {
@@ -310,67 +353,82 @@ margin-bottom: 50px;
 height: 300px;
 margin-top: 30px;
 }
-
+.card{
+  background-color: bisque;
+}
+/* NAV */
 *{
+  margin; 0;
   padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
+  box-sizing: border-box; 
 }  
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+header{
+  position: absolute;
+  width: 100%;
+  height: 8vh;
+  top: 0;
+  left: 0;
+  background: rgb(217, 217, 241);
+  color: #fff;
+  padding: 0 2rem;
+}
 nav{
   height: 80px;
   width: 100%;
-  background: #34495e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-label.logo{
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-  padding: 0 100px;
-  line-height: 80px;
-}
-nav ul{
-  float: right;
-  margin-right: 40px;
-}
-nav li{
-  display: inline-block;
-  margin: 0 8px;
-  line-height: 80px;
-}
-nav a{
-  color:darkgoldenrod;
-  font-size: 18px;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-  padding: 7px 10px;
-  border-radius: 3px;
-}
-a.active,a:hover{
-  border: 1px solid white;
-  transition: .5s;
-}
-nav #icon{
-  color: white;
-  font-size: 30px;
-  line-height: 80px;
-  float: right;
-  margin-right: 40px;
-  cursor: pointer;
+.toggle{
   display: none;
 }
-@media(max-width: 325px){
-  label.logo{
-    font-size: 20px;
-    padding-left: 20px;
-  }
-  nav ul {
-    margin-right: 10px;
-  }
-  nav a{
-    font-size: 17px;
+.navbar{
+  background-color: rgb(203, 203, 215);
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 500px;
+  color: black;
+}
+.menu li a{
+  color: #fff;
+  text-decoration: none;
+}
+.btn{
+  border: 0;
+  background: pink;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.logo{
+  font-size: 1px;
+  width: 2px;
+}
+/* SECTION HERO */
+.hero{
+  height: 100vh;
+  background: url(barre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  
+}
+@media all and (max-width: 900px) {
+  .toggle{
+    display: block;
+    font-size: 2rem;
   }
 }
+
 @media(max-width: 300px){
   nav #icon{
     display: block;
@@ -410,20 +468,20 @@ nav #icon{
     flex-direction: column;
   }
 }
-
-@media screen {
-  h1 
-  font-style: 14px;
-  font: x-large/50%;
-} 
-@media screen
-  .order7 {
-    font-size: 40px;
-    margin-top: 0%;
-    text-align: center;
+/* Nouveau */
+/* G */
+.G{
+  text-align: center;
 }
-@media screen(max-width: 3) {
+.phone1{
+  padding-left: 500px;
+}
+.section3{
   
+  padding-right: 30px;
+}
+.phone3{
+  padding-right: 70px;
 }
   
   
